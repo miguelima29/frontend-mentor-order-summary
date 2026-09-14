@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+  /* PRIMARY COLORS */
+  --blue100: hsl(225, 100%, 94%);
+  --blue700: hsl(245, 75%, 52%);
+  --blue700-shadow-1: hsla(245, 75%, 52%, 0.5);
+  --blue700-shadow-2: hsla(245, 75%, 52%, 0.15);
+
+  /* NEUTRAL COLORS */
+  --blue50: hsl(225, 100%, 98%);
+  --gray600: hsl(224, 23%, 55%);
+  --blue950: hsl(223, 47%, 23%);
+
+  /* FONT FAMILY */
+  --font-family: 'Red Hat Display', sans-serif;
+
+  /* FONT SIZES */
+  --paragraph-size: 1rem;
+  --button-size: 1rem;
+  --heading-size: 1.7rem;
+
+  /*GAPS & PADDINGS*/
+  --gp-1: 1rem;
+  --gp-2: 1.5rem;
+  --gp-3: 2.5rem;
+  --gp-4: 3rem;
+
+  /*RADIUS*/
+  
+  --radius-1: 10px;
+  --radius-2: 20px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body{
+  font-family: var(--font-family);
+  background-color: var(--blue100);
+  background-image: url('./assets/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center -10vh;
+  background-size: 100% auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url('./assets/pattern-background-mobile.svg');
+    background-position: top center;
+    background-size: 100% auto;
+  }
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  width: 90%;
+  max-width: 450px;
+  border-radius: var(--radius-2);
+  box-shadow: 0px 10px 20px -5px var(--blue700-shadow-2);
+}
+
+
+.main-div-content-1 img{
+  width: 100%;
+  display: block;
+}
+
+.main-div-content-2{
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: var(--gp-2);
+}
+
+.main-div-content-2 h1, .main-div-content-2 p{
+  text-align: center;
+}
+
+.main-div-content-2 h1{
+  font-weight: 900;
+  font-size: var(--heading-size);
+  color: var(--blue950);
+}
+
+.main-paragraph{
+  font-size: var(--paragraph-size);
+  color: var(--gray600);
+  padding: 0 1rem;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--gp-2);
+  border-radius: var(--radius-1);
+  align-items: center;
+  background-color: var(--blue50);
+}
+
+.plan-text h5{
+  font-weight: 900;
+  color: var(--blue950);
+  font-size: var(--paragraph-size);
+}
+
+.plan-info{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-text{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.plan Button{
+  background-color: transparent;
+  color: var(--blue700);
+  text-decoration: underline;
+}
+
+.btns{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gp-3);
+}
+
+
+.btn-proceed{
+  background-color: var(--blue700);
+  color: white;
+  font-weight: 900;
+  font-size: var(--button-size);
+  padding: var(--gp-1);
+  border-radius: var(--radius-1);
+  box-shadow: 0px 10px 20px -5px var(--blue700-shadow-1);
+}
+
+.btn-proceed:hover{
+  background-color: var(--blue950);
+}
+
+.btn-cancel{
+  background-color: transparent;
+  color: var(--gray600);
+  font-weight: 700;
+  font-size: var(--button-size);
+}
