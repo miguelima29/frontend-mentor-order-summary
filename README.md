@@ -1,16 +1,56 @@
-# React + Vite
+# Frontend Mentor - Order summary card solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlvkEZKj). 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### The challenge
 
-## Expanding the ESLint configuration
+Users should be able to:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- See hover states for interactive elements
+- View the optimal layout for the interface depending on their device's screen size
+
+### Screenshot
+
+<img width="1487" height="927" alt="image" src="https://github.com/user-attachments/assets/fbd7138e-8c71-45b1-a20d-44160be473cb" />
+
+
+### Links
+
+- Solution URL: []
+- Live Site URL: []
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties (Variables)
+- Flexbox
+- Responsive Design (Media Queries & Max-Width)
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev/) - Frontend Tooling
+
+### What I learned
+
+During this project, I improved my understanding of component structure in React using Vite. I also refined my CSS skills, particularly in handling responsive layouts and positioning background images dynamically without breaking the layout on smaller screens.
+
+## Author
+
+GitHub - miguelima29
+Frontend Mentor - @miguelima29
+
+
+
